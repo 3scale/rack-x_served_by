@@ -1,4 +1,4 @@
-# Rack::XServedBy
+# Rack::XServedBy [![Code Climate](https://codeclimate.com/github/3scale/rack-x_served_by/badges/gpa.svg)](https://codeclimate.com/github/3scale/rack-x_served_by)
 
 
 Rack::XServedBy is a Rack middleware, that adds `X-Served-By` HTTP header to your responses.
