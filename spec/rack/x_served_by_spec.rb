@@ -35,5 +35,10 @@ RSpec.describe Rack::XServedBy do
       _status, headers, _body = middleware.call({})
       expect(headers).to include('X-Served-By' => hostname)
     end
+
+    it 'accepts hostname' do
+      middleware = described_class.new(app, hostname)
+      expect(middleware.hostname).to be(hostname)
+    end
   end
 end

@@ -6,10 +6,9 @@ module Rack
 
     HEADER_NAME = 'X-Served-By'.freeze
 
-    def initialize(app)
+    def initialize(app, hostname = self.class.hostname)
       @app = app
-
-      @hostname = self.class.hostname
+      @hostname = hostname
     end
 
     def self.hostname

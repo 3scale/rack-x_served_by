@@ -45,6 +45,12 @@ module YourApp
 end  
 ```
 
+You can configure custom hostname as:
+
+```ruby
+use Rack::XServedBy, 'custom-hostname'
+```
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt that will allow you to experiment.
