@@ -41,4 +41,9 @@ RSpec.describe Rack::XServedBy do
       expect(middleware.hostname).to be(hostname)
     end
   end
+
+
+  it 'loads rack-x_served_by' do
+    require 'rack-x_served_by'
+  end
 end
