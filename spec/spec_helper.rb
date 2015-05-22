@@ -13,6 +13,10 @@
 # it.
 #
 # The `.rspec` file also contains a few flags that are not defaults but that
+
+require 'codeclimate-test-reporter'
+CodeClimate::TestReporter.start
+
 # users commonly want.
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
